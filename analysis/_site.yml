@@ -1,14 +1,14 @@
-name: "project"
+name: project
 output_dir: ../docs
 navbar:
-  title: "project"
+  title: project
   left:
-  - text: Home
-    href: index.html
-  - text: About
-    href: about.html
-  - text: License
-    href: license.html
+  - text: hnf4a_p53
+    href: hnf4a_p53.html
+  right:
+  - icon: fa-github
+    text: Source code
+    href: https://github.com/weiyubai/project
 output:
   workflowr::wflow_html:
     toc: yes
