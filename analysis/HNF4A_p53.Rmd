@@ -1,0 +1,32 @@
+---
+title: "p53_analysis"
+author: "WeiyuBai"
+date: "2021-05-26"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: inline
+---
+Introduction
+sw480hnf4aoe
+
+```{r setup, echo=FALSE, results="hide"}
+knitr::opts_chunk$set(
+	error = FALSE,
+	message = FALSE,
+	warning = TRUE,
+	cache = FALSE,
+	cache.lazy = FALSE,
+	dev = "png",
+	tidy = FALSE
+)
+```
+## p53 heatmap 
+```{r fig.height=8, fig.width=4}
+data <- read.table("E:/Desktop/workflowr/project/analysis/data.txt",header = T ,sep = "\t",row.names = 1)
+library(pheatmap)
+pheatmap(data,scale = "row" ,cluster_row = FALSE, cluster_col = FALSE, main = "heatmap")#scale = "row"
+
+ 
+```
