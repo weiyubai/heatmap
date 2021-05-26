@@ -3,12 +3,12 @@ output_dir: ../docs
 navbar:
   title: project
   left:
-  - text: hnf4a_p53
-    href: hnf4a_p53.html
+  - text: p53_analysis
+    href: p53_analysis.html
   right:
   - icon: fa-github
     text: Source code
-    href: https://github.com/weiyubai/project
+    href: https://github.com/weiyubbai/project
 output:
   workflowr::wflow_html:
     toc: yes
